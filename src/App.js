@@ -17,6 +17,9 @@ class App extends Component {
         console.log(ninja);
         ninja.id = Math.random();
         // this.state.ninjas.push(ninja)
+        /**
+         * using the above ninjas array and setting up a clone of that array, to add new arrays
+         */
         let ninjas = [...this.state.ninjas, ninja];
         this.setState({
             ninjas: ninjas
