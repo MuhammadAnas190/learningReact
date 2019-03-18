@@ -40,7 +40,18 @@ class App extends Component {
     //     console.log("Submitted check" + this.state.name);
     // };
     deleteNinjas = (id) => {
-
+        // console.log(id);
+        /**
+         * Filter the array and return the new array. If equals then filter it.
+        */
+        let Ninjas = this.state.ninjas.filter(
+            ninja => {
+                return ninja.id !== id
+            });
+        this.setState({
+                ninjas: Ninjas
+            }
+        )
     };
     render() {
         return (
