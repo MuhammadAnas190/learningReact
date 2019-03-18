@@ -64,8 +64,8 @@ class App extends Component {
                         {/*<input type="text" onChange={this.HandleChange}/>*/}
                         {/*<button>Submit</button>*/}
                     {/*</form>*/}
-                    <Ninja_add newNinja={this.addNinja}/>
                 </header>
+                <Ninja_add newNinja={this.addNinja}/>
             </div>
         );
     }

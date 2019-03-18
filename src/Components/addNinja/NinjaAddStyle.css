@@ -1,0 +1,9 @@
+/*For Component based doesn't matter can also be used globally*/
+.AddNinja {
+    background: lightgrey;
+    padding: 20px;
+}
+.AddNinja input {
+    border: 2px solid #777777;
+    padding: 10px;
+}
