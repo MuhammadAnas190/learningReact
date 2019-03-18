@@ -39,12 +39,14 @@ class App extends Component {
     //     e.preventDefault();
     //     console.log("Submitted check" + this.state.name);
     // };
+    deleteNinjas = (id) => {
 
+    };
     render() {
         return (
             <div className="App">
                 <header className="App-header">
-                    <Home Ninjas={this.state.ninjas}/>
+                    <Home Ninjas={this.state.ninjas} deleteNinja={this.deleteNinjas}/>
                     <h1>Welcome to React {this.state.name}</h1>
                     {/*<button onClick={this.HandlerClick}>Click Me</button>*/}
                     {/*<form onSubmit={this.HandleSubmit}>*/}
