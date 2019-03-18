@@ -15,8 +15,12 @@ class App extends Component {
     };
     addNinja = (ninja) => {
         console.log(ninja);
-        // this.state.id = Math.random();
-
+        ninja.id = Math.random();
+        // this.state.ninjas.push(ninja)
+        let ninjas = [...this.state.ninjas, ninja];
+        this.setState({
+            ninjas: ninjas
+        })
     };
     // HandlerClick = (e) => {
     //     this.setState({
